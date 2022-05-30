@@ -1,0 +1,61 @@
+#CV {
+    height: 1000px;
+
+    .container-fluid {
+        margin-top: 100px;
+    }
+
+    .btn-sm {
+        border-radius: 10px;
+        border: $lightpink 2px solid;
+        transition: $transition;
+        background-color: white;
+        font-weight: 600;
+
+        &:hover {
+            background-color: $lightpink;
+        }
+
+        &:focus {
+            outline: none !important;
+            box-shadow: none;
+        }
+    }
+
+    .btn {
+        &:focus {
+            outline: none !important;
+            box-shadow: none;
+        }
+    }
+
+    .progress {
+        border-radius: 30px;
+        height: 20px;
+
+        .progress-bar {
+            background-color: $purple;
+            width: 0%;
+            height: auto;
+        }
+    }
+
+    .nav-item {
+        .nav-link {
+            color: $purple;
+            transition: $transition;
+        }
+    }
+
+    .tab-pane {
+        position: relative;
+        text-align: center;
+    }
+
+    .top-left {
+        position: absolute;
+        top: 50px;
+        left: 60px;
+    }
+
+}

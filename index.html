@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beverly Ann Gupit</title>
+    <meta name="description" content="Welcome to my portfolio website. I am a Digital Doer and a Front-end web developer. Click the link to know more about me.">
+    <link rel="shortcut icon" href="https://i.ibb.co/ggS44Vd/Beveryly-Gupit-Logo-Options-BLACK-05.png" type="image/x-icon" alt="Beverly's pixel avatar">
+    <link rel="stylesheet" href="./styles/style.css">
+
+    <!-- bootstrap 4 -->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
+    <!-- oribi analytics -->
+    <script type="application/javascript">
+        (function(b,o,n,g,s,r,c){
+            if(b[s])return;
+            b[s]={};b[s].scriptToken="Xy0xMTk0MDU1MzIw";
+            b[s].callsQueue=[];
+            b[s].api=function(){
+                b[s].callsQueue.push(arguments);
+            };
+            r=o.createElement(n);
+            c=o.getElementsByTagName(n)[0];
+            r.async=1;
+            r.src=g;
+            r.id=s+n;
+            c.parentNode.insertBefore(r,c);
+        })
+        (window,document,"script","https://cdn.oribi.io/Xy0xMTk0MDU1MzIw/oribi.js","ORIBI");
+    </script>
+</head>
+<body>
+    
+    <!-- navbar -->
+    <div class="sticky-top">
+        <nav class="navbar navbar-expand-sm justify-content-center">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">ABOUT</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#CV" class="nav-link">CV</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#home" class="navbar-brand">
+                        <img src="./images/Beverly Ann.png" alt="logo" class="logoImg" title="Beverly Ann Gupit" height="100px" width="100px">
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#portfolio" class="nav-link">PORTFOLIO</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#links" class="nav-link">LINKS</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- parallax welcome background-->
+    <div id="home"></div>
+        <div id="parallax"></div>
+        <h1 class="font-weight-bold display-1 text-center">Digital Doer | Junior Web Dev</h1>
+    </div>
+
+    
+    <!-- about -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm text-center">
+                    <img src="./images/me_2.png" alt="me" height="200px" class="text-center">
+                    <h2 class="font-weight-bold display-3">Who am I?</h2>
+                </div>
+                <div class="col-sm">
+                    <br><br><br>
+                    <p class="text-justify">
+                        Hello, my name is <b>Beverly Ann Gupit</b>. 
+                        I am a Junior Web Developer with a Bachelor of Computers and Information Sciences (BCIS) in AUT, 
+                        and a Digital Doer in Manaaki.
+                    </p>
+                    <p class="text-justify">
+                        I have a strong technical ability and an innovative, 
+                        creative design approach that focuses on user experience and functionality.
+                    </p>
+                    <p class="text-justify">
+                        I believe that we learn something new everyday, big or small.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- CV -->
+    <div id="CV">
+        <div class="container-fluid">
+            <h2 class="font-weight-bold display-2 text-center">
+                <img src="./images/laptop.png" alt="laptop" height="100px">
+                More about me
+                <img src="./images/pc.png" alt="personal computer" height="100px">
+            </h2>
+        </div>
+        <div class="container">
+            <br><br>
+            <div class="row">
+                <div class="col-sm-6">
+                    <h3 class="text-center">
+                        As a Digital Doer...
+                    </h3>
+                    <p class="text-justify">
+                        I have multiple skills that will help many small businesses; 
+                        branding, e-commerce, content creation, digital marketing, digital tools, SEO, SEM, and CRO.
+                    </p>
+                </div>
+                <div class="col-sm-6">
+                    <h3 class="text-center">
+                        As a Junior Web Dev...
+                    </h3>
+                    <p class="text-center">
+                        I have the following software skills,
+                    </p>
+                    
+                    <div class="text-center">
+                        <button title="click me" class="btn btn-sm" id="html" onclick="html()">HTML</button>
+                        <button title="click me" class="btn btn-sm" id="scss" onclick="scss()">SCSS</button>
+                        <button title="click me" class="btn btn-sm" id="php" onclick="scss()">PHP</button>
+                        <button title="click me" class="btn btn-sm" id="js" onclick="js()">JavaScript</button>
+                        <br><br>
+                        <div class="progress" id="progress">
+                            <div class="progress-bar" id="progressBar"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <h3 class="text-center">
+                Education and Work
+            </h3>
+            <br />
+            <!-- timeline carousel -->
+            <div class="container">
+                <!-- nav tabs -->
+                <ul class="nav nav-tabs nav-justified">
+                    <li class="nav-item">
+                        <a href="#one" class="nav-link font-weight-bold" data-toggle="tab">2019</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#two" class="nav-link font-weight-bold" data-toggle="tab">2021</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#three" class="nav-link active font-weight-bold" data-toggle="tab">2022</a>
+                    </li>
+                </ul>
+                <!-- tab panes -->
+                <div class="tab-content">
+                    <div class="tab-pane fade" id="one">
+                        <img src="./images/2019.png" alt="2019" class="img-fluid">
+                        <div class="top-left">
+                            <p class="text-justify">
+                                <b class="lead">BCIS, AUT</b>
+                                <br/>
+                                &bull;&nbsp&nbsp&nbsp&nbsp&nbsp&nbspMajored in Software Development with a Bachelor of Computers and Information Sciences in AUT
+                                <br/>
+                                &bull;&nbsp&nbsp&nbsp&nbsp&nbsp&nbspStudied the following:
+                                <br/>
+                                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&bull;&nbsp&nbsp&nbsp&nbsp&nbsp&nbspWeb Development
+                                <br/>
+                                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&bull;&nbsp&nbsp&nbsp&nbsp&nbsp&nbspEnterprise Systems
+                                <br/>
+                                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&bull;&nbsp&nbsp&nbsp&nbsp&nbsp&nbspLogical and Physical Database Design
+                                <br/>
+                                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&bull;&nbsp&nbsp&nbsp&nbsp&nbsp&nbspIT Project Management
+                            </p>
+                            <br/>
+                            <p class="text-justify">
+                                <b class="lead">Customer Sales Rep., AIDA Sales</b>
+                                <br/>
+                                &bull;&nbsp&nbsp&nbsp&nbsp&nbsp&nbspCold calling and lead generation
+                                <br/>
+                                &bull;&nbsp&nbsp&nbsp&nbsp&nbsp&nbspProcessing Sales
+                                <br/>
+                                &bull;&nbsp&nbsp&nbsp&nbsp&nbsp&nbspCustomer relationships, direct marketing
+                                <br/>
+                                &bull;&nbsp&nbsp&nbsp&nbsp&nbsp&nbspData entry and daily reporting
+                            </p>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="two">
+                        <img src="./images/2021.png" alt="2021" class="img-fluid">
+                        <div class="top-left">
+                            <p class="text-justify">
+                                <b class="lead">Digital Doers Internship, Manaaki</b>
+                                <br/>
+                                &bull;&nbsp&nbsp&nbsp&nbsp&nbsp&nbspDigital Marketing Strategist, <b>Sustainability 360</b>
+                                <br/>
+                                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&bull;&nbsp&nbsp&nbsp&nbsp&nbsp&nbspStrategised and designed a content calendar
+                                <br/>
+                                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&bull;&nbsp&nbsp&nbsp&nbsp&nbsp&nbspDesigned, in a team of 2, templates for social media contents
+                                <br/>
+                                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&bull;&nbsp&nbsp&nbsp&nbsp&nbsp&nbspDesigned workflows for email newsletters
+                                <br/><br/>
+                                &bull;&nbsp&nbsp&nbsp&nbsp&nbsp&nbspFront-end web developer/designer, <b>Chooza</b>
+                                <br/>
+                                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&bull;&nbsp&nbsp&nbsp&nbsp&nbsp&nbspRevamped the e-commerce website's UX/UI design
+                            </p>
+                            <br/>
+                            <p class="text-justify">
+                                <b class="lead">Digital Doers Academy, Manaaki</b>
+                                <br/>
+                                &bull;&nbsp&nbsp&nbsp&nbsp&nbsp&nbspStudied the following:
+                                <br/>
+                                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&bull;&nbsp&nbsp&nbsp&nbsp&nbsp&nbspBranding
+                                <br/>
+                                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&bull;&nbsp&nbsp&nbsp&nbsp&nbsp&nbspContent creation
+                                <br/>
+                                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&bull;&nbsp&nbsp&nbsp&nbsp&nbsp&nbspDigital marketing
+                                <br/>
+                                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&bull;&nbsp&nbsp&nbsp&nbsp&nbsp&nbspStrategisig the right digital tools
+                                <br/>
+                                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&bull;&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSEO, SEM, and CRO
+                                <br/>
+                                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&bull;&nbsp&nbsp&nbsp&nbsp&nbsp&nbspE-commerce
+                            </p>
+                        </div>
+                    </div>
+                    <div class="tab-pane active" id="three">
+                        <img src="./images/2022.png" alt="2022" class="img-fluid">
+                        <div class="top-left">
+                            <p class="text-justify">
+                                <b class="lead">Digital Doer - Ecommerce, MQTooling (Sep 2021 - Present)</b>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio -->
+    <div id="portfolio">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm">
+                    <a href="https://drive.google.com/file/d/1NKKXjmCJ4ZteUMDjyI5FUOveWfKRicwq/view?usp=sharing" target="_blank" class="btn btn-block">Recommended Online Tools</a>
+                    <br/>
+                    <a href="https://drive.google.com/file/d/1wdheYq8FYXQn0nNwaTEo6OC21XnPCtDb/view?usp=sharing" target="_blank" class="btn btn-block">CRO Audit</a>
+                    <br/>
+                    <a href="https://drive.google.com/file/d/1XiUHbVXKc458gRaeCJl6pbdn4DOI-P3N/view?usp=sharing" target="_blank" class="btn btn-block">Brand Strategy</a>
+                    <br/>
+                    <a href="https://drive.google.com/file/d/1Y5n44BbxxxNijGB8mZudFXIpYBZxAEyY/view?usp=sharing" target="_blank" class="btn btn-block">Digital Audit</a>
+                </div>
+                <div class="col-sm">
+                    <h2 class="display-3 font-weight-bold text-center">
+                        Some work I've done
+                    </h2>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <h2 class="display-3 font-weight-bold text-center">Testimonials</h2>
+            <div class="jumbotron">
+                <p class="text-justify">
+                    <i>
+                        "Beverly came on board as a Digital Doer through Manaaki as part of her internship about 6 weeks before the launch of Chooza.
+                        <br/>
+                        As we were getting close to launch there was a wide range of functions to perform, with varying degrees of urgency and levels of technical skills required.
+                        <br/>
+                        Beverly was able to navigate the constantly shifting sands of a start-up, especially at such a fluid and critical time in the project.
+                        <br/>
+                        Her ability to quickly find where she could add the most value and run with those opportunities created a real safe pair of hands for the work she was doing.
+                        <br/>
+                        I would say that as far as internships go, starting 6 weeks before launch is very much getting thrown into the deep end and a baptism of fire that will be useful for both Beverly and whoever she works with in the future."
+                    </i>
+                </p>
+                <br/>
+                <small class="text-justify">
+                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbspStephen Moon
+                    <br/>
+                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbspFounder
+                    <br/>
+                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbspChooza
+                </small>
+            </div>
+        </div>
+    </div>
+
+    <div style="height: 1000px;"></div>
+
+    <!-- footer -->
+    <hr>
+    <div id="links">
+        <div class="d-flex justify-content-center">
+            <div class="p-2 text-center">
+                <table class="table table-borderless">
+                    <tr>
+                        <td>
+                            <a href="https://linktr.ee/bevzay" target="_blank" title="contact me">
+                                <i class="fas fa-external-link-square-alt"></i>
+                            </a>
+                        </td>
+                    </tr>
+                </table>
+                <br/>
+                <small>&copy; 2021 - 2022</small>
+                <br/>
+                <kbd class="small">coded and designed by me</kbd>
+            </div>
+        </div>
+    </div>
+
+    <script src="./javascript/progress.js"></script>
+    <script src="./javascript/parallax.js"></script>
+</body>
+</html>

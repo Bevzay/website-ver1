@@ -1,0 +1,24 @@
+#portfolio {
+    height: 200px;
+
+    .container {
+        margin-top: 300px;
+    }
+
+    .btn {
+        border-radius: 10px;
+        border: $lightpink 2px solid;
+        transition: $transition;
+        background-color: white;
+        font-weight: 600;
+
+        &:hover {
+            background-color: $lightpink;
+        }
+
+        &:focus {
+            outline: none !important;
+            box-shadow: none;
+        }
+    }
+}
